@@ -1,0 +1,56 @@
+$primary-color: #007bff;
+$active-color: #f0f0f0;
+$badge-bg: #ff5733;
+$submenu-active-bg: #e7f1ff;
+
+.menu-link {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.3s ease;
+  font-weight: 500;
+
+  &:hover {
+    background-color: $active-color;
+    color: #000;
+  }
+
+  &.menu-item-active {
+    background-color: $primary-color;
+    color: white;
+  }
+
+  .menu-icon {
+    margin-right: 10px;
+  }
+
+  .text-box {
+    flex-grow: 1;
+  }
+
+  .menu-badge {
+    background-color: $badge-bg;
+    color: white;
+    padding: 3px 8px;
+    font-size: 12px;
+    border-radius: 12px;
+    margin-left: 10px;
+  }
+}
+
+.submenu-item-active {
+  background-color: $submenu-active-bg;
+  color: $primary-color;
+}
+
+.menu-link {
+  &.parent_active {
+    background-color: #f1f1f1;
+  }
+
+  &.collapsed {
+    background-color: #fff;
+  }
+}
